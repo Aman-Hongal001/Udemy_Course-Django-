@@ -1,0 +1,52 @@
+/* body{
+    background-color: gray;
+    background-image: url(https://i.pinimg.com/736x/07/cf/b2/07cfb208eb2b477096c999bb93362b2d.jpg);
+    background-repeat: no-repeat;
+}   
+
+div{
+    background: blue;
+    border-color: orange;
+    border-width: 5px;
+    border-style: dotted;
+}
+p{
+    color: yellow;
+}
+
+span{
+    background: red;
+    color: black;
+} */
+
+.firstDiv{
+    color: orange;
+}
+div{
+    color: red;
+}
+
+#single{
+    color: green;
+    text-decoration: line-through;
+}
+/* this * means for all it can override everything except id
+*{
+    color: black;
+} */
+
+/* this means sibling of h3 which has ul  */
+h3 + ul{
+    border: 4px dotted purple;
+}
+
+/* this means li that contains a  */
+li a{
+    color: aqua;
+}
+
+/* this is for specific a tag which has href "link" */
+li a[href="../HTML/table_1.html"]{
+    color: lime;
+    border: 4px red dashed;
+}
