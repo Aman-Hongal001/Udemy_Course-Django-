@@ -15,6 +15,7 @@ def form_deatils(request):
             print("Validation Success!")
             print("NAME : "+form.cleaned_data['name'])
             print("EMIAL : "+form.cleaned_data['email'])
+            form.cleaned_data['verify_email']
             print("TEXT : "+form.cleaned_data['text'])
     
     return render(request,'formpage.html',{'form':form})
