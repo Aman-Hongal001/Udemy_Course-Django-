@@ -15,4 +15,10 @@
     {% block body_block %}
         <h1>Welcome to Index</h1>
         <h2>This is index.html page showing!</h2>
+        <!-- here upper is buitin filter to make it uppercase -->
+         <h1>{{ text|upper }}</h1>
+         <!-- this is custom filter made in templatetags/my_extras.py  -->
+        <h1>{{ text|cut:'Hello' }}</h1>
+        <!-- here add is builtin function to add with the number given -->
+        <h1>{{ number|add:"99" }}</h1>
     {% endblock %}
